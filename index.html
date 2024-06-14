@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Sabzi - Your Fresh Grocery Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <style>
+        .col-md-3 {
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            height: 100%;
+        }
+
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card .card-body {
+            text-align: center;
+        }
+
+        .rounded-image {
+            border-radius: 10px;
+        }
+
+        .banner-section {
+            padding: 0;
+            /* Remove default padding */
+
+            .contact-section {
+                padding: 60px 0;
+            }
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 70vh;
+            /* 20% of the viewport height */
+            object-fit: cover;
+            /* Ensures the image covers the entire container without stretching */
+        }
+
+        .card-price {
+            font-size: 1.25rem;
+            color: #28a745;
+            /* Customize the color to match your theme */
+            font-weight: bold;
+            margin-bottom: 10px;
+            /* Adjust the spacing as needed */
+        }
+
+        .btn-social {
+            margin: 0 5px;
+            color: white;
+            background-color: #007bff;
+            /* Adjust the color as needed */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-social:hover {
+            color: #007bff;
+            background-color: white;
+            border: 1px solid #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-blue navbar-expand-lg sticky-top justify-content-center">
+            <div class="container">
+                <img src="https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg"
+                    alt="Online Sabzi Logo" class="custom-logo" width="100" height="100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="shop.html">Shop</a>
+                                <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                                <a class="dropdown-item" href="cart.html">Cart</a>
+                                <a class="dropdown-item" href="checkout.html">Checkout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span
+                                    class="icon-shopping_cart"></span></a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-Add-to-Cart">
+                            <a class="nav-link" href="cart.html">
+                                <!-- Set the width and height of the image to 32px -->
+                                <img src="https://cdn1.iconfinder.com/data/icons/shopping-and-ecommerce/64/E-commerce_and_Shopping-16-256.png"
+                                    alt="Add to Cart" style="width: 32px; height: 32px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+<br>
+<br>
+    <!-- Hero Header Section -->
+    <section class="hero-header">
+        <div class="container text-center">
+            <h1 class="text-black">Welcome to Online Sabzi</h1>
+            <p class="text-black">Your Fresh Grocery Store</p>
+            <a href="shopnow.html">Shop Now</a>
+        </div>
+    </section>
+
+
+    <section class="banner-section py-5">
+        <div class="text-center">
+            <img src="2.jpg" alt="Banner Image" class="banner-image">
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary-gradient">Our Products</h2><br><br>
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/free-photo/top-view-cauliflower-with-leaves_23-2148758819.jpg?t=st=1716971442~exp=1716975042~hmac=aa20ce38653f082c1029c3cba6446bdd439ed003a950f7326ca0b436dd711ce6&w=360"
+                            alt="Cauliflower" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cauliflower</h5>
+                            <p class="card-text">The Veggie with the Power to Transform Your Plate!.</p>
+                            <p class="card-price">Rs 2.99/kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/premium-photo/slices-radish-lettuce-leaves_112977-43.jpg?w=740"
+                            alt="Daikon Radish" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Daikon Radish</h5>
+                            <p class="card-text">Embrace the Crunch: Daikon Radish - Nature's Refreshing!.</p>
+                            <p class="card-price">Rs 3.49/Kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/premium-vector/fresh-scallions-with-long-green-tops_1253557-21369.jpg?w=740"
+                            alt="Leeks" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Leeks</h5>
+                            <p class="card-text">Savor the Garden's Bounty with Every Bite.</p><br>
+                            <p class="card-price">Rs 1.99/Kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/premium-photo/fresh-red-white-onions-dark-background_58460-6190.jpg?w=740"
+                            alt="Lotus Root" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lotus Root</h5>
+                            <p class="card-text">Rooted in Wellness, Blossoming with Flavor.</p><br>
+                            <p class="card-price">Rs 4.99/Kg</p>
+
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Second Row -->
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/free-photo/close-up-mushrooms-rosemary-near-vegetables_23-2147829070.jpg?t=st=1716977317~exp=1716980917~hmac=24275f8c74adf5eecf4a9ad7a1c3e7c30e45643d76ebabeceb8d6d792538b67f&w=740"
+                            alt="Mushrooms" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mushrooms</h5>
+                            <p class="card-text">Nature's Flavorful Delight and Bold Flavor.</p>
+                            <p class="card-price">Rs 3.99/Kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/free-vector/watercolor-white-calla-lily-flower-floral-seamless-pattern_44538-11084.jpg?t=st=1716977464~exp=1716981064~hmac=ce092312902b0092545520486e3381a479507b8a5cfe5195c9cb48eea13989b5&w=740"
+                            alt="Mustard Greens" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mustard Greens</h5>
+                            <p class="card-text">Bold Flavor Mustard Greens for Vibrant Living.</p>
+                            <p class="card-price">Rs 2.49/Kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/premium-vector/fresh-vegetable-ladies-finger-okra-falling-vector-green-background_858191-240.jpg?w=740"
+                            alt="Okra" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Okra</h5>
+                            <p class="card-text">Savor the Southern Charm, Taste the Garden's Bounty.</p>
+                            <p class="card-price">Rs 2.79/Kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://img.freepik.com/premium-photo/cut-whole-red-onions-black-background_392895-411584.jpg?w=740"
+                            alt="Onions (Red)" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Onions (Red)</h5>
+                            <p class="card-text">Add Color to Your Cuisine, Depth to Your Dishes.</p>
+                            <p class="card-price">Rs 1.49/kg</p>
+                            <a href="#" class="btn btn-primary stretched-link">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://img.freepik.com/free-photo/painting-green-vegetable-red-tomato_1340-25549.jpg?t=st=1690140201~exp=1690143801~hmac=7961b6483054b426dcccd2dbfff03eda80cdc1814e8b5a7a172901a141554e40&w=740"
+                        alt="About Image" class="img-fluid mb-4 rounded-image">
+                </div>
+                <div class="col-md-6" style="text-align: justify;">
+                    <h2 class="text-primary-gradient">About Online Sabzi</h2>
+                    <p>Welcome to Online Sabzi, your one-stop destination for fresh and high-quality groceries. We
+                        are dedicated to providing you with the finest selection of fruits, vegetables, dairy products,
+                        and more, all sourced from trusted local farmers and suppliers.</p>
+                    <p>At Online Sabzi, we understand the importance of fresh and nutritious food for a healthy
+                        lifestyle. That's why we take pride in delivering farm-fresh produce directly to your doorstep.
+                        Our team of dedicated professionals ensures that every product meets the highest standards of
+                        quality, so you can shop with confidence.</p>
+                    <p>With our user-friendly website and easy ordering process, shopping for groceries has never been
+                        more convenient. Browse through our wide range of products, add them to your cart, and have them
+                        delivered to your home in no time. Say goodbye to long queues and crowded stores!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p>Email: info@onlinesabzi.com</p>
+                    <p>Phone: 1234567890</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-right">
+                        <a href="https://www.facebook.com/onlinesabziofficial/" class="btn btn-social"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://onlinesabzi.in/" class="btn btn-social"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/onlinesabziofficial/" class="btn btn-social"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="footer-menu list-unstyled">
+                        <li><a href="#" data-toggle="modal" data-target="#privacyPolicyModal">Privacy Policy</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#termsModal">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>&copy; 2024 Online Sabzi. All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- Privacy Policy Modal -->
+            <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog"
+                aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add your Privacy Policy content here -->
+                            <p>Certainly! Here are the points formatted as a list with `<br>` tags:
+
+                                - We collect personal information such as name, email address, and contact number when
+                                you register on our website or place an order.<br>
+                                - Your personal information is used to process orders, personalize your experience, and
+                                improve our website's functionality.<br>
+                                - We may use your email address to send you updates about your order, promotional
+                                offers, and newsletters. You can unsubscribe from these communications at any time.<br>
+                                - Your information is securely stored and protected against unauthorized access, use, or
+                                disclosure.<br>
+                                - We do not sell, trade, or transfer your personal information to third parties without
+                                your consent, except for trusted partners who assist us in operating our website and
+                                servicing you.<br>
+                                - We may disclose your information when we believe it is necessary to comply with the
+                                law, enforce our site policies, or protect ours or others' rights, property, or
+                                safety.<br>
+                                - By using our website, you consent to our privacy policy.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terms Modal -->
+            <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add your Terms of Service content here -->
+                            <p>By accessing the website, you agree to comply with these terms and conditions.<br>
+                                You must be at least 18 years old to use this website.<br>
+                                You are responsible for maintaining the confidentiality of your account and password and
+                                for restricting access to your computer.<br>
+                                You agree not to use the website for any illegal or unauthorized purpose.<br>
+                                We reserve the right to refuse service, terminate accounts, or cancel orders at our sole
+                                discretion.<br>
+                                The content of the website is for your general information and use only. It is subject
+                                to change without notice.<br>
+                                We do not guarantee the accuracy, timeliness, performance, completeness, or suitability
+                                of the information and materials found or offered on this website for any particular
+                                purpose.<br>
+                                Your use of any information or materials on this website is entirely at your own risk,
+                                for which we shall not be liable.<br>
+                                Unauthorized use of this website may give rise to a claim for damages and/or be a
+                                criminal offense.<br>
+                                From time to time, this website may also include links to other websites. These links
+                                are provided for your convenience to provide further information. They do not signify
+                                that we endorse the website(s). We have no responsibility for the content of the linked
+                                website(s).<br>
+                                Your use of this website and any dispute arising out of such use of the website is
+                                subject to the laws of [Your Country].<br></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

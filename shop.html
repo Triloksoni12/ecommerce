@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Sabzi - Shop Now</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .hero {
+            background-size: cover;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            background-color: lightblue;
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-category {
+            text-align: center;
+            margin-bottom: 40px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-category img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .product-category h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-category:hover {
+            transform: scale(1.1);
+        }
+
+        .featured-products {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-card img {
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .product-card h4 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .product-card:hover {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .product-card:hover img {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Online Sabzi</h1>
+    </div>
+
+    <div class="container">
+        <h2 class="text-primary">Shop Now</h2>
+
+        <!-- Product Categories -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-category">
+                    <img src="https://img.freepik.com/free-photo/variety-fruits-table-with-yellow-background_1340-23424.jpg"
+                        alt="Fruits" class="img-fluid">
+                    <h3>Fruits</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-category">
+                    <img src="https://img.freepik.com/free-photo/fresh-vegetables-wicker-basket-healthy-diet-generated-by-ai_188544-30705.jpg"
+                        alt="Vegetables" class="img-fluid">
+                    <h3>Vegetables</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-category">
+                    <img src="https://img.freepik.com/free-photo/dairy-products-milk-butter-yogurt-cheese-cream-on-wooden-plate_141793-5079.jpg"
+                        alt="Dairy Products" class="img-fluid">
+                    <h3>Dairy Products</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="featured-products">
+            <h2 class="text-primary">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://img.freepik.com/free-photo/red-apple-with-water-droplets-it_188544-30421.jpg"
+                            alt="Apple" class="img-fluid">
+                        <h4>Red Apples</h4>
+                        <p>Price: Rs 150.00 per kg</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://img.freepik.com/free-photo/bunch-fresh-carrots-ai-generated-image_587448-1359.jpg"
+                            alt="Carrots" class="img-fluid">
+                        <h4>Fresh Carrots</h4>
+                        <p>Price: Rs 70.00 per kg</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="https://img.freepik.com/free-photo/fresh-green-lettuce_1205-4365.jpg" alt="Lettuce"
+                            class="img-fluid">
+                        <h4>Green Lettuce</h4>
+                        <p>Price: Rs 200.00 per piece</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
